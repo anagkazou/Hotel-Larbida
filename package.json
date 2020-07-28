@@ -1,0 +1,28 @@
+{
+  "name": "2045-hotel",
+  "version": "1.0.0",
+  "description": "A creative landing page for a fictional hotel",
+  "main": "index.js",
+  "dependencies": {
+    "liveserver": "^0.1.20"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "scripts": {
+    "compile-sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidOmole/2045-Hotel.git"
+  },
+  "keywords": [
+    "Hotel"
+  ],
+  "author": "David Omole",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidOmole/2045-Hotel/issues"
+  },
+  "homepage": "https://github.com/DavidOmole/2045-Hotel#readme"
+}
