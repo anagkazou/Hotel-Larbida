@@ -1,0 +1,34 @@
+.footer {
+  padding: 5rem 0;
+  background-color: $color-black;
+
+  .logo-block__link {
+    text-align: center;
+    img {
+      // min-height: 3rem;
+      max-height: 5.5rem;
+    }
+  }
+
+  &__navigation {
+    margin-top: 12rem;
+    &--right {
+      display: flex;
+      flex-direction: row;
+      font-size: 1.4rem;
+      color: $color-grey-dark;
+    }
+  }
+
+  .social__link,
+  .footer__navigation--text {
+    float: left;
+
+    img {
+      max-height: 2rem;
+    }
+    &:not(:first-child) {
+      margin-left: 3rem;
+    }
+  }
+}

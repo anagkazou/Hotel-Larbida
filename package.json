@@ -4,13 +4,14 @@
   "description": "A creative landing page for a fictional hotel",
   "main": "index.js",
   "dependencies": {
-    "liveserver": "^0.1.20"
+    "live-server": "^1.2.1"
   },
   "devDependencies": {
     "node-sass": "^4.14.1"
   },
   "scripts": {
-    "compile-sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "node-sass scss/main.scss css/style.css",
+    "watch:sass": "node-sass scss/main.scss css/style.css  -w"
   },
   "repository": {
     "type": "git",

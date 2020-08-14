@@ -1,0 +1,69 @@
+.hamburger {
+  &-icon {
+    display: inline-block;
+    width: 2rem;
+    min-height: 1.4rem;
+    margin: auto 1.5rem auto 0;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+
+    & .line {
+      display: block;
+      position: absolute;
+      height: 1px;
+      width: 2.5rem;
+      background: $color-white;
+      border-radius: 0.9rem;
+      opacity: 1;
+      left: 0;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: 0.25s ease-in-out;
+      -moz-transition: 0.25s ease-in-out;
+      -o-transition: 0.25s ease-in-out;
+      transition: 0.25s ease-in-out;
+    }
+
+    & .line:nth-child(1) {
+      top: 0;
+    }
+
+    & .line:nth-child(2) {
+      top: 0.7rem;
+    }
+
+    & .line:nth-child(3) {
+      top: 1.4rem;
+    }
+  }
+}
+.open .line:nth-child(1) {
+  top: 0.7rem;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.open .line:nth-child(2) {
+  opacity: 0;
+  left: -3rem;
+}
+
+.open .line:nth-child(3) {
+  top: 0.7rem;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}

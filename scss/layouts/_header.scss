@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  width: 100vw;
+  height: 15vh;
+  position: absolute;
+  z-index: 8;
+  padding: 0 4%;
+  color: $color-white;
+
+  &--logo {
+    width: 8rem;
+    height: auto;
+    align-self: center;
+  }
+
+  &__links {
+    display: inherit;
+    flex-direction: row;
+    margin-left: auto;
+    align-items: center;
+
+    &--text {
+      font-size: 1.3rem;
+    }
+  }
+
+  .btn {
+    display: flex;
+    border: 1px solid $color-white;
+    justify-content: center;
+    padding: 0.7rem 1.2rem;
+    color: $color-black;
+    background-color: transparent;
+  }
+}

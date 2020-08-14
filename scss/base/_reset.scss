@@ -10,6 +10,7 @@ html,
 body {
   overflow-x: hidden;
   position: relative;
+  background-color: $color-white;
 }
 
 html {
@@ -22,9 +23,12 @@ body {
 
 ul {
   list-style: none;
+  margin: 0;
 }
 
-a {
+a,
+a:visited,
+a:link {
   text-decoration: none;
   color: inherit;
 }

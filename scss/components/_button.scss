@@ -1,0 +1,39 @@
+.btn {
+  display: inline-block;
+  color: $color-white !important;
+  font-weight: 400;
+  font-size: 1.8rem;
+  padding: 1.5rem 4rem;
+  background-color: $color-brown-dark;
+  z-index: 2;
+  text-transform: uppercase;
+  border-radius: 0;
+
+  &:hover {
+    color: $color-white !important;
+  }
+  &--text {
+    background-color: transparent;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1;
+
+    & span {
+      position: absolute;
+      width: 1.1rem;
+      overflow: hidden;
+      transform: translateX(10px);
+      transition: all ease 0.5s;
+
+      & img {
+        width: inherit;
+        vertical-align: 0px !important;
+        transition: all ease 0.5s;
+      }
+    }
+
+    &:hover span {
+      transform: translateX(25px);
+    }
+  }
+}
