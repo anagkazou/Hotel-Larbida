@@ -127,7 +127,7 @@
     }
     &__img {
       background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url("/img/about.jpg");
+        url("../img/about.jpg");
       background-position: 50% 50%;
       background-repeat: no-repeat;
       @include respond(tab-land) {

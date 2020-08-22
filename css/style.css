@@ -274,7 +274,7 @@ body:not(i) {
 
 .bird {
   position: absolute;
-  background-image: url(/svg/bird-cells.svg);
+  background-image: url(../svg/bird-cells.svg);
   background-size: auto 100%;
   width: 1.6rem !important;
   height: 2.4rem;
@@ -538,7 +538,7 @@ body:not(i) {
     .section-about {
       padding: 8rem 12%; } }
   .section-about__img {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/img/about.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/about.jpg");
     background-position: 50% 50%;
     background-repeat: no-repeat; }
     @media only screen and (min-width: 48em) {
