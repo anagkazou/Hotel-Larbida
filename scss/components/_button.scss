@@ -2,14 +2,18 @@
   display: inline-block;
   color: $color-white !important;
   font-weight: 400;
-  font-size: 1.8rem;
-  padding: 1.5rem 4rem;
+  font-size: 1.4rem;
+  padding: 1rem 3rem;
   background-color: $color-brown-dark;
   z-index: 2;
   text-transform: uppercase;
   border-radius: 0;
-
+  @include respond(phone) {
+    font-size: 1.8rem;
+    //padding: 1rem 3rem;
+  }
   &:hover {
+    //Overide bootstrap btn hover style
     color: $color-white !important;
   }
   &--text {

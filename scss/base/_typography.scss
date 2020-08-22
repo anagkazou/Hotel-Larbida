@@ -11,28 +11,46 @@ body:not(i) {
 }
 .h1 {
   font-size: 7.5rem;
+  @include respond(phone) {
+    font-size: 4.5rem;
+  }
 }
 .h2 {
   font-size: 4.2rem;
   position: relative;
   color: $color-brown-dark;
-  &::before {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 3.5rem;
-    top: 2rem;
-    left: -1rem;
-    background-color: $color-brown-dark;
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   height: 1px;
+  //   width: 2.5rem;
+  //   top: 1.9rem;
+  //   left: -0.3rem;
+  //   background-color: $color-brown-dark;
+  // }
+}
+
+.list-item + .paragraph {
+  margin-bottom: 2rem;
+  @include respond(tab-land) {
+    margin-bottom: 1rem;
   }
 }
 
-.paragraph,
-.list-item {
-  font-size: 1.5rem;
+.paragraph {
+  font-size: 1.7rem;
   color: $color-grey-dark;
-}
 
+  @include respond(tab-port) {
+    font-size: 2.1rem;
+    margin-bottom: 2.2rem;
+  }
+
+  @include respond(large-desktop) {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+  }
+}
 .foreground-section__title {
   font-size: 3.5rem;
   text-align: center;

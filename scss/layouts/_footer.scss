@@ -4,19 +4,62 @@
 
   .logo-block__link {
     text-align: center;
+    line-height: 10rem;
+    vertical-align: middle;
+
     img {
-      // min-height: 3rem;
+      min-height: 3rem;
       max-height: 5.5rem;
+      // max-width: 100%;
+      // max-height: 100%;
+      // height: auto;
+      // width: auto;
+      @include respond(tab-port) {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+        width: auto;
+      }
     }
   }
 
   &__navigation {
-    margin-top: 12rem;
+    margin-top: 6rem;
+    margin-bottom: 7rem;
+
+    .row {
+      @include respond(tab-port) {
+        flex-direction: column;
+      }
+    }
+    &--left {
+      @include respond(tab-port) {
+        margin: 0 auto 1rem auto;
+      }
+    }
     &--right {
       display: flex;
-      flex-direction: row;
-      font-size: 1.4rem;
+      font-size: 1.7rem;
       color: $color-grey-dark;
+      margin-left: auto;
+
+      @include respond(tab-port) {
+        flex-direction: column;
+        margin: 0 auto 1rem auto;
+      }
+      @include respond(phone) {
+      }
+
+      &-2 {
+        // @include respond(small-phone) {
+        //   margin: 0 auto;
+        // }
+        @include respond(tab-port) {
+          margin: 0 auto;
+        }
+        @include respond(phone) {
+        }
+      }
     }
   }
 
@@ -28,7 +71,33 @@
       max-height: 2rem;
     }
     &:not(:first-child) {
-      margin-left: 3rem;
+      margin-left: 2rem;
+    }
+  }
+  .social__link {
+    &:not(:first-child) {
+      margin-left: 2rem;
+    }
+  }
+  .footer__navigation--text {
+    &:not(:first-child) {
+      margin-right: 2rem;
     }
   }
 }
+
+//Test Code
+
+// form {
+//   background-color: teal;
+//   max-width: 100vw;
+//   height: 100rem;
+// }
+
+// .boxx {
+//   height: 20rem;
+// }
+
+// .boxx-inner {
+//   height: 10rem;
+// }

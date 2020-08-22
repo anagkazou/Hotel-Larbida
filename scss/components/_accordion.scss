@@ -1,8 +1,11 @@
 .accordion {
-  height: 600px;
+  height: 60rem;
   position: relative;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  @include respond(tab-port) {
+    height: 90rem;
+  }
 }
 
 .accordion .background--section {
@@ -34,10 +37,21 @@
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+
+  @include respond(tab-port) {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  @include respond(phone) {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 }
 
 .accordion .foreground-section {
-  padding: 60px;
+  padding: 6rem;
   width: 33.33%;
   min-width: 33.33%;
 
@@ -49,11 +63,19 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  @include respond(tab-port) {
+    width: 100%;
+    height: 33.33%;
+  }
+  // @include respond(phone) {
+  //   width: 100%;
+  //   height: 33.33%;
+  // }
 
   &:hover {
     .foreground-section__wrapper {
       background: rgba($color-black, 0.4);
-      border: 1px solid $color-white;
+      // border: 1px solid $color-white;
     }
   }
 }
@@ -69,30 +91,53 @@
   transition: opacity 0.5s;
   width: 300%;
   z-index: 1;
+  @include respond(tab-port) {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  @include respond(phone) {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
-.accordion .foreground-section:first-child .foreground--image {
+// .resp-fix {
+//   //SPA accordion Image responsiveness fix
+//   background-position-y: 90% !important;
+
+//   @include respond(tab-port) {
+//     background-position-y: 80% !important;
+//   }
+//   @include respond(phone) {
+//     background-position-y: 80% !important;
+//   }
+// }
+.foreground-section:first-child .foreground--image {
   left: 0;
 }
 .accordion .foreground-section:nth-child(2) .foreground--image {
   left: -100%;
+  @include respond(tab-port) {
+    left: 0;
+  }
+  @include respond(phone) {
+    left: 0;
+  }
 }
 .accordion .foreground-section:nth-child(3) .foreground--image {
   left: -200%;
+  @include respond(tab-port) {
+    left: 0;
+  }
+  @include respond(phone) {
+    left: 0;
+  }
 }
 .mouseentered .foreground--image {
   opacity: 0;
 }
-
-// <div
-//   class="foreground-section__wrapper"
-//   > <div
-//   class="foreground-section__title"
-//   > Suites
-//   </div
-//   > <div
-//   class="foreground-description"
-//   >
 
 .accordion .foreground .foreground-section .foreground-section__wrapper {
   margin: 2rem;
@@ -108,7 +153,7 @@
   width: 100%;
   align-items: center;
   justify-content: center;
-  transition: border 0.5s ease;
+  // transition: border 0.5s ease;
   //   -webkit-align-items: center;
   //-ms-flex-align: center;
   //   align-items: center;
@@ -119,4 +164,11 @@
   //   //   -webkit-box-orient: vertical;
   //   //   -webkit-box-direction: normal;
   flex-direction: column;
+
+  @include respond(tab-port) {
+    margin: 0;
+  }
+  @include respond(tphone) {
+    margin: 0;
+  }
 }

@@ -2,8 +2,8 @@
   position: absolute;
   background-image: url(/svg/bird-cells.svg);
   background-size: auto 100%;
-  width: 16px !important;
-  height: 24px;
+  width: 1.6rem !important;
+  height: 2.4rem;
   will-change: background-position;
 
   animation-name: fly;
@@ -24,14 +24,19 @@
 }
 
 .bird-wrapper {
-  height: 290px;
+  height: 29rem;
   left: 0;
+  bottom: 0;
   position: absolute;
-  max-width: 1440px !important;
+  max-width: 144rem !important;
   z-index: -1;
+
+  @include respond(phone) {
+    height: 25rem;
+  }
 }
 @keyframes fly {
   100% {
-    background-position: -171px 0;
+    background-position: -17.1rem 0;
   }
 }

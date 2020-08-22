@@ -65,7 +65,7 @@
                 <div class="overlay"></div>
               </div>
               <div class="hero__content container">
-                <div class="col-md-9">
+                <div class="col-md-9 pl-0">
                   <p class="hero--subheading">
                     Grand Lobby
                   </p>
@@ -83,7 +83,7 @@
                 <div class="overlay"></div>
               </div>
               <div class="hero__content container">
-                <div class="col-md-9">
+                <div class="col-md-9 pl-0">
                   <p class="hero--subheading">
                     Deluxe Room
                   </p>
@@ -104,11 +104,14 @@
                 <div class="overlay"></div>
               </div>
               <div class="hero__content container">
-                <div class="col-md-9">
+                <div class="col-md-9 pl-0">
                   <p class="hero--subheading">
                     Luxury Dining
                   </p>
-                  <h1 class="h1">Modern Classic Experiences</h1>
+                  <h1 class="h1">
+                    Classic <br />
+                    Experiences
+                  </h1>
                   <a href="#" class="btn p-0 btn--text my-3"
                     >Discover More
                     <span><img src="./img/arr-right.png" alt="" /></span>
@@ -126,13 +129,13 @@
       </section>
       <section class="section-about">
         <div class="row">
-          <div class="col-md-8 p-0">
+          <div class="col-md-7 col-lg-8 p-0">
             <div class="section-about__img"></div>
           </div>
-          <div class="col-md-4 p-0">
-            <div class="px-5">
+          <div class="col-md-5 col-lg-4 p-0 d-flex align-items-center">
+            <div class="px-md-5 px-lg-5">
               <h2 class="h2">
-                &nbsp; Experience Comfort And Hospitality at Ferlin, Gamodia
+                Experience Comfort And Hospitality at Ferlin, Gamodia
               </h2>
 
               <p class="paragraph">
@@ -145,6 +148,11 @@
                 countless college graduations, family vacations, re-unions,
                 birthday celebrations, meetings and training programs.
               </p>
+              <p class="paragraph">
+                Families and business people love us, too. We’ve been hosts to
+                countless college graduations, family vacations, re-unions,
+                birthday celebrations, meetings and training programs.
+              </p>
 
               <p class="paragraph">
                 Our appeal to such a wide range of clientele might have to do
@@ -152,11 +160,8 @@
                 And probably with our terrific location:
               </p>
               <p class="paragraph">
-                Right around the corner from Gamodia International airport,
-                minutes away from near the Lake darsa Medical & Research Center
-                and the USTA Home of American Tennis, from MALT LISNEY WORLD®
-                Resort and Downtown Disney®. You won't find a better value than
-                this JD Power & Associates award winning Holiday Inn.
+                You won't find a better value than this JD Power & Associates
+                award winning Holiday Inn.
               </p>
 
               <p class="paragraph">
@@ -311,11 +316,8 @@
       </section>
 
       <section class="section-cta cta">
-        <div class="" style="min-height: 35rem;">
-          <div
-            class="cta__bg"
-            style="background-image: url(./img/bg-ferlin.jpg);"
-          >
+        <div class="cta__height" style="min-height: 35rem;">
+          <div class="cta__bg" style="background-image: url(./img/ttest.jpg);">
             <div class="cta__inner">
               <div class="cta__content">
                 <p class="cta__content--subtitle">Explore</p>
@@ -323,6 +325,7 @@
                   Metropolitan <br />
                   Ferlin
                 </p>
+
                 <p><a href="#" class="btn my-3">Tour With Us</a></p>
                 <div class="bird-wrapper">
                   <div class="bird"></div>
@@ -446,7 +449,7 @@
               style="opacity: 1;"
             >
               <div
-                class="foreground--image"
+                class="foreground--image resp-fix"
                 style="
                   background-image: linear-gradient(
                       rgba(0, 0, 0, 0.2),
@@ -479,26 +482,23 @@
           <div class="col-md-7 p-0">
             <div class="section-promotions__img"></div>
           </div>
-          <div class="col-md-5 p-0">
-            <div class="padding-trl">
+          <div class="col-md-5 p-0 d-flex align-items-center">
+            <div class="px-md-5">
               <h2 class="h2">
-                &ensp; Promotions
+                Promotions
               </h2>
               <div class="line"></div>
               <p class="section-promotions__title">
-                Unconditional Rates
+                Flexible Rates
               </p>
               <p class="paragraph">
-                We understand how difficult travel is right now so we try as
-                much as we possible to create an area where you can move easily
-                with todays unconditional situation.
+                We understand how difficult travel is right now due to the
+                pandemic, but we got you covered! We offer a very generous
+                cancellation policy, additional discounts on our flexible rates,
+                as well as complimentary Continental breakfast through your
+                stay.
               </p>
 
-              <p class="paragraph">
-                Our new UNCONDITIONAL rate offers a very generous cancellation
-                policy, additional discounts on our flexible rates, as well as
-                complimentary Continental breakfast through your stay.
-              </p>
               <div class="line"></div>
 
               <p class="section-promotions__title">
@@ -512,9 +512,10 @@
               </p>
 
               <ul>
-                <li class="list-item">Deluxe Garden view.</li>
-                <li class="list-item">Deluxe Park view.</li>
-                <li class="list-item">Junior Suite.</li>
+                <!-- IMPROVE THIS LIST. USE PARAGRAPH CLASS INSTEAD FOR BETTER CODE OPTIMIZATION -->
+                <li class="list-item paragraph">Deluxe Garden view.</li>
+                <li class="list-item paragraph">Deluxe Park view.</li>
+                <li class="list-item paragraph">Junior Suite.</li>
               </ul>
               <div class="line"></div>
               <a href="#" class="btn">Book Now</a>
@@ -524,15 +525,15 @@
       </section>
 
       <section class="section-booking">
-        <form action="" method="post" class="form">
-          <div class="container" style="height: inherit;">
-            <div class="row" style="height: inherit;">
+        <!-- <form action="" method="post" class="form">
+          <div class="container">
+            <div class="row align-items-center h-100">
               <div
-                class="col-12 form__wrap p-0 mx-2 my-5 d-flex align-items-center"
+                class="col-lg-4 col-md-6 col-sm-12 form__wrap p-0 mx-2 my-5 d-flex align-items-center"
               >
-                <div class="col-md-9 d-flex align-items-center box">
+                <div class="row align-items-center h-100">
                   <div
-                    class="col-3 px-2 d-flex align-items-center input align-items-center"
+                    class="col-6 px-2 d-flex align-items-center input align-items-center"
                   >
                     <div class="input__inner d-flex align-items-center">
                       <div class="input__content">
@@ -545,8 +546,9 @@
                       </div>
                     </div>
                   </div>
+
                   <div
-                    class="col-3 px-2 d-flex align-items-center input align-items-center"
+                    class="col-6 px-2 d-flex align-items-center input align-items-center"
                   >
                     <div class="input__inner d-flex align-items-center">
                       <div class="input__content">
@@ -558,8 +560,15 @@
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 col-sm-12 form__wrap p-0 mx-2 my-5 d-flex align-items-center"
+              >
+                <div class="row align-items-center h-100">
                   <div
-                    class="col-3 px-2 d-flex align-items-center input align-items-center"
+                    class="col-6 px-2 align-items-center input align-items-center"
                   >
                     <div class="input__inner d-flex align-items-center">
                       <div class="input__content guests">
@@ -572,8 +581,9 @@
                       </div>
                     </div>
                   </div>
+
                   <div
-                    class="col-3 px-2 d-flex align-items-center input align-items-center"
+                    class="col-6 px-2 align-items-center input align-items-center"
                   >
                     <div class="input__inner d-flex align-items-center">
                       <div class="input__content guests">
@@ -587,8 +597,83 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-3 px-2 input d-flex align-items-center box">
-                  <a href="#" class="btn mx-auto">Book Now</a>
+              </div>
+
+              <div class="col-4 px-2 input d-flex align-items-center box">
+                <a href="#" class="btn mx-auto">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </form> -->
+
+        <form action="" class="form d-flex align-items-center">
+          <div class="container p-5">
+            <div class="form__wrap px-5">
+              <div class="row align-items-center h-100 py-5">
+                <div class="col-lg-4 col-md-6 col-sm-12 pb-md-1 box">
+                  <div class="row align-items-center h-100">
+                    <div class="col-6 h-100 d-flex align-items-center">
+                      <div class="input__inner d-flex align-items-center">
+                        <div class="input__content">
+                          <label class="label d-block" for="input--departure">
+                            Check-In</label
+                          >
+                          <span class="date">06</span>
+                          <span class="month">July</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 h-100 d-flex align-items-center">
+                      <div class="input__inner d-flex align-items-center">
+                        <div class="input__content">
+                          <label class="label d-block" for="input--departure">
+                            Check-Out</label
+                          >
+                          <span class="date">06</span>
+                          <span class="month">July</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 pb-md-1 box">
+                  <div class="row align-items-center h-100 mt-sm-3 mt-md-0">
+                    <div class="col-6 h-100 d-flex align-items-center">
+                      <div class="input__inner d-flex align-items-center">
+                        <div class="input__content guests">
+                          <label class="label d-block" for="input--departure">
+                            Guest(s)</label
+                          >
+                          <span class="guests__minus" id="guestMinus">-</span>
+                          <span class="guests__number mx-3">4</span>
+                          <span class="guests__add" id="guestAdd">+</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-6 h-100 d-flex align-items-center">
+                      <div class="input__inner d-flex align-items-center">
+                        <div class="input__content guests">
+                          <label class="label d-block" for="input--departure">
+                            Room(s)</label
+                          >
+                          <span class="rooms__minus" id="roomMinus">-</span>
+                          <span class="rooms__number mx-3">4</span>
+                          <span class="rooms__add" id="roomAdd">+</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="col-lg-4 col-md-12 text-center"
+                  style="height: fit-content;"
+                >
+                  <a href="#" class="btn mx-auto mt-sm-5 mt-lg-0 w-md-100"
+                    >Book Now</a
+                  >
                 </div>
               </div>
             </div>
@@ -600,53 +685,48 @@
     <footer class="footer">
       <div class="container">
         <div class="row footer__press-features">
-          <a
-            href="#"
-            class="col-md-2 col-sm-4 mb-sm-5 mb-md-0 logo-block__link"
-          >
-            <img src="./img/logo/vogue.png" alt="Vogue-logo" />
-          </a>
+          <div class="col-md-6">
+            <div class="my-5">
+              <div class="row">
+                <a href="#" class="col-4 logo-block__link">
+                  <img src="./img/logo/autograph.png" alt="Vogue-logo" />
+                </a>
 
-          <a
-            href="#"
-            class="col-md-2 col-sm-4 mb-sm-5 mb-md-0 logo-block__link"
-          >
-            <img src="./img/logo/TAGApproved-Logo-blue.png" alt="Vogue-logo" />
-          </a>
+                <a href="#" class="col-4 logo-block__link">
+                  <img
+                    src="./img/logo/TAGApproved-Logo-blue.png"
+                    alt="Vogue-logo"
+                  />
+                </a>
+                <a href="#" class="col-4 logo-block__link">
+                  <img src="./img/logo/elle.png" alt="Vogue-logo" />
+                </a>
+              </div>
+            </div>
+          </div>
 
-          <a
-            href="#"
-            class="col-md-2 col-sm-4 mb-sm-5 mb-md-0 logo-block__link"
-          >
-            <img src="./img/logo/TripAdvisor-logo.png" alt="Vogue-logo" />
-          </a>
+          <div class="col-md-6 m-0">
+            <div class="my-5">
+              <div class="row">
+                <a href="#" class="col-4 logo-block__link">
+                  <img src="./img/logo/TripAdvisor-logo.png" alt="Vogue-logo" />
+                </a>
 
-          <a
-            href="#"
-            class="col-md-2 col-sm-4 mt-sm-5 mt-md-0 logo-block__link"
-          >
-            <img src="./img/logo/elle.png" alt="Vogue-logo" />
-          </a>
-
-          <a
-            href="#"
-            class="col-md-2 col-sm-4 mt-sm-5 mt-md-0 logo-block__link"
-          >
-            <img src="./img/logo/autograph.png" alt="Vogue-logo" />
-          </a>
-
-          <a
-            href="#"
-            class="col-md-2 col-sm-4 mt-sm-5 mt-md-0 logo-block__link"
-          >
-            <img src="./img/logo/aaafourdiamond.png" alt="Vogue-logo" />
-          </a>
+                <a href="#" class="col-4 logo-block__link">
+                  <img src="./img/logo/aaafourdiamond.png" alt="Vogue-logo" />
+                </a>
+                <a href="#" class="col-4 logo-block__link">
+                  <img src="./img/logo/vogue.png" alt="Vogue-logo" />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="footer__navigation">
         <div class="container">
           <div class="row">
-            <ul class="footer__navigation--left ul float-left">
+            <ul class="footer__navigation--left ul">
               <li class="social__link">
                 <a href="#"> <img src="./img/logo/facebook.png" alt="" /> </a>
               </li>
@@ -661,24 +741,22 @@
               </li>
             </ul>
 
-            <div
-              class="d-flex align-items-center float-right ml-auto footer__navigation--right"
-            >
-              <div class="footer__navigation--right-1 mr-5">
-                <ul class="float-right">
+            <div class="d-flex align-items-center footer__navigation--right">
+              <div class="footer__navigation--right-1">
+                <ul class="">
                   <li class="footer__navigation--text">
                     <a href="#" class="link"> 29, McAvenue Street, Lagos </a>
                   </li>
                   <li class="footer__navigation--text">
                     <a href="#" class="link">
-                      +234-703-6964-051
+                      +2347036964051
                     </a>
                   </li>
                 </ul>
               </div>
 
               <div class="footer__navigation--right-2">
-                <ul class="float-right">
+                <ul>
                   <li class="footer__navigation--text">
                     <a href="#" class="footer__link"> Privacy Policy </a>
                   </li>
