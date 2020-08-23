@@ -422,10 +422,16 @@ body:not(i) {
   z-index: 8;
   padding: 0 4%;
   color: #fefefe; }
+  @media only screen and (max-width: 37em) {
+    .header {
+      height: 8vh; } }
   .header--logo {
     width: 8rem;
     height: auto;
     align-self: center; }
+    @media only screen and (max-width: 37em) {
+      .header--logo {
+        width: 6rem; } }
   .header__links {
     display: inherit;
     flex-direction: row;
@@ -486,6 +492,9 @@ body:not(i) {
     font-size: 2.1rem;
     position: relative;
     padding-left: 8.6rem; }
+    @media only screen and (max-width: 37em) {
+      .hero--subheading {
+        font-size: 1.8rem; } }
     .hero--subheading::before {
       content: "";
       position: absolute;
@@ -566,6 +575,9 @@ body:not(i) {
   opacity: 1;
   padding-bottom: 29rem;
   max-height: none; }
+  @media only screen and (max-width: 37em) {
+    .section-cta {
+      padding-bottom: 25rem; } }
   .section-cta::before {
     position: absolute;
     bottom: 0;
@@ -601,11 +613,11 @@ body:not(i) {
       @media only screen and (max-width: 47.93em) {
         .section-cta .cta__bg {
           background-size: 180% auto; } }
+      @media only screen and (min-width: 48em) {
+        .section-cta .cta__bg {
+          background-size: 110% auto; } }
     .section-cta .cta__height {
       min-height: 35rem; }
-      @media only screen and (max-width: 37em) {
-        .section-cta .cta__height {
-          min-height: 30rem; } }
     .section-cta .cta__inner {
       -webkit-box-align: center;
       -webkit-align-items: center;
@@ -636,7 +648,7 @@ body:not(i) {
         max-width: 90rem;
         width: 100%; }
     .section-cta .cta__content--subtitle {
-      margin-bottom: 2.8rem;
+      margin-bottom: 3rem;
       color: #202020;
       font-size: 3rem;
       font-weight: 400;
@@ -651,7 +663,7 @@ body:not(i) {
         .section-cta .cta__content--subtitle {
           font-size: 3.2rem; } }
     .section-cta .cta__content--title {
-      font-size: 3rem;
+      font-size: 3.2rem;
       font-weight: 500;
       line-height: 1.2em;
       font-family: "Lora", sans-serif;
@@ -665,6 +677,8 @@ body:not(i) {
     .section-cta .cta__content--title,
     .section-cta .cta__content .btn {
       width: auto; }
+    .section-cta .cta__content .btn {
+      font-size: 1.8rem; }
   .section-cta .section-cta__bg,
   .section-cta > .section-cta__inner {
     left: 0;

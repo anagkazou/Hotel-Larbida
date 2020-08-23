@@ -6,11 +6,17 @@
   z-index: 8;
   padding: 0 4%;
   color: $color-white;
-
+  @include respond(phone) {
+    height: 8vh;
+  }
   &--logo {
     width: 8rem;
     height: auto;
     align-self: center;
+
+    @include respond(phone) {
+      width: 6rem;
+    }
   }
 
   &__links {

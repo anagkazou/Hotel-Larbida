@@ -53,6 +53,9 @@
     position: relative;
     padding-left: 8.6rem;
 
+    @include respond(phone) {
+      font-size: 1.8rem;
+    }
     &::before {
       content: "";
       position: absolute;
@@ -165,7 +168,10 @@
     opacity: 1;
     padding-bottom: 29rem;
     max-height: none;
-    //margin-top: 180px;
+
+    @include respond(phone) {
+      padding-bottom: 25rem;
+    }
     &::before {
       position: absolute;
       bottom: 0;
@@ -213,12 +219,12 @@
         @include respond(tab-port) {
           background-size: 180% auto;
         }
+        @include respond(tab-land) {
+          background-size: 110% auto;
+        }
       }
       &__height {
         min-height: 35rem;
-        @include respond(phone) {
-          min-height: 30rem;
-        }
       }
       &__inner {
         -webkit-box-align: center;
@@ -256,7 +262,7 @@
 
       &__content {
         &--subtitle {
-          margin-bottom: 2.8rem;
+          margin-bottom: 3rem;
           color: $color-grey-dark-2;
           font-size: 3rem;
           font-weight: 400;
@@ -273,7 +279,7 @@
           }
         }
         &--title {
-          font-size: 3rem;
+          font-size: 3.2rem;
           font-weight: 500;
           line-height: 1.2em;
           font-family: "Lora", sans-serif;
@@ -289,6 +295,9 @@
         &--title,
         .btn {
           width: auto;
+        }
+        .btn {
+          font-size: 1.8rem;
         }
       }
     }
