@@ -26,7 +26,7 @@ body {
     html,
     body {
       font-size: 50% !important; } }
-  @media only screen and (min-width: 81em) {
+  @media only screen and (min-width: 87em) {
     html,
     body {
       font-size: 85% !important; } }
@@ -79,7 +79,7 @@ body:not(i) {
     .paragraph {
       font-size: 2.1rem;
       margin-bottom: 2.2rem; } }
-  @media only screen and (min-width: 81em) {
+  @media only screen and (min-width: 87em) {
     .paragraph {
       font-size: 1.7rem;
       margin-bottom: 1rem; } }
@@ -544,7 +544,7 @@ body:not(i) {
     @media only screen and (min-width: 48em) {
       .section-about__img {
         height: 85rem; } }
-    @media only screen and (min-width: 81em) {
+    @media only screen and (min-width: 87em) {
       .section-about__img {
         height: 105rem;
         background-size: cover; } }
