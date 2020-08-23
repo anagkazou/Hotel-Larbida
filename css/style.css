@@ -519,6 +519,9 @@ body:not(i) {
     height: fit-content;
     top: 53%;
     right: 0%; }
+    @media only screen and (max-width: 37em) {
+      .hero .swiper-pagination {
+        top: 50%; } }
     .hero .swiper-pagination-bullet {
       background-color: #fefefe;
       width: 1rem;
@@ -537,6 +540,9 @@ body:not(i) {
         padding: 0.8rem; }
       .hero .swiper-pagination-bullet:nth-child(2) {
         margin: 0 4rem; }
+        @media only screen and (max-width: 37em) {
+          .hero .swiper-pagination-bullet:nth-child(2) {
+            margin: 0 2.4rem; } }
 
 .section-about {
   padding: 8rem 4% 8rem 0; }

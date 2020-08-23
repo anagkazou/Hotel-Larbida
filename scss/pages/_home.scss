@@ -90,7 +90,9 @@
       height: fit-content;
       top: 53%;
       right: 0%;
-
+      @include respond(phone) {
+        top: 50%;
+      }
       &-bullet {
         background-color: $color-white;
         width: 1rem;
@@ -111,6 +113,9 @@
 
         &:nth-child(2) {
           margin: 0 4rem;
+          @include respond(phone) {
+            margin: 0 2.4rem;
+          }
         }
       }
     }
