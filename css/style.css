@@ -583,7 +583,7 @@ body:not(i) {
     height: auto;
     overflow: hidden; }
     .section-cta .cta__bg {
-      background-size: 115% auto;
+      background-size: 105% auto;
       background-position: bottom;
       left: 0;
       position: absolute;
@@ -597,7 +597,7 @@ body:not(i) {
           background-size: 240% auto; } }
       @media only screen and (max-width: 37em) {
         .section-cta .cta__bg {
-          background-size: 200% auto; } }
+          background-size: 210% auto; } }
       @media only screen and (max-width: 47.93em) {
         .section-cta .cta__bg {
           background-size: 180% auto; } }

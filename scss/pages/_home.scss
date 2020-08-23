@@ -193,7 +193,7 @@
       overflow: hidden;
 
       &__bg {
-        background-size: 115% auto;
+        background-size: 105% auto;
         background-position: bottom;
         left: 0;
         position: absolute;
@@ -208,7 +208,7 @@
         }
 
         @include respond(phone) {
-          background-size: 200% auto;
+          background-size: 210% auto;
         }
         @include respond(tab-port) {
           background-size: 180% auto;
