@@ -28,23 +28,31 @@ function initBirdAnimation() {
   const $birdWrapper = $(".bird-wrapper");
   const windowsWidth = window.innerWidth;
 
+  const isMobile = windowsWidth < 577;
+
   const $bird = $(".bird").remove();
 
   for (var i = 0; i <= numOfBirds - 1; i++) {
-    const $this = $bird.clone();
-    $birdWrapper.append($this);
+    const $thisBird = $bird.clone();
+    $birdWrapper.append($thisBird);
 
+    //Default time for a one to bird fly accross the screen
     const minMoveTime = windowsWidth < 800 ? 8 : 15;
     const maxMoveTime = windowsWidth < 800 ? 14 : 25;
 
+    const minMoveTimeMobile = 15;
+    const maxMoveTimeMobile = 25;
+
     const moveTime = getRandomInt(minMoveTime, maxMoveTime);
+
+    const moveTimeMobile = getRandomInt(minMoveTimeMobile, maxMoveTimeMobile);
 
     const isEven = i % 2 === 0;
 
     //Starting top position
     const topPercent = getRandomInt(0, 100);
 
-    gsap.set($this, { top: `${Math.abs(topPercent)}%` });
+    gsap.set($thisBird, { top: `${Math.abs(topPercent)}%` });
 
     const tl = new TimelineMax({
       ease: Linear.easeNone,
@@ -52,31 +60,50 @@ function initBirdAnimation() {
       repeat: -1,
     });
 
-    tl.set($this, {
-      left: "-25px",
-      y: isEven ? getRandomInt(30, 60) : getRandomInt(-60, -30),
-      ease: Power0.easeNone,
-    })
-      .to($this, moveTime / 4, {
-        left: "25%",
-        y: isEven ? getRandomInt(-40, -20) : getRandomInt(20, 40),
+    //Test viewport width
+    if (isMobile) {
+      tl.set($thisBird, {
+        left: "-25px",
+        y: isEven ? getRandomInt(30, 60) : getRandomInt(-60, -30),
         ease: Power0.easeNone,
       })
-      .to($this, moveTime / 4, {
-        left: "50%",
-        y: isEven ? getRandomInt(20, 40) : getRandomInt(-40, -20),
+        .to($thisBird, moveTimeMobile / 3, {
+          left: "50%",
+          y: isEven ? getRandomInt(-20, -10) : getRandomInt(20, 40),
+          ease: Power0.easeNone,
+        })
+        .to($thisBird, moveTimeMobile / 3, {
+          left: "100%",
+          y: isEven ? getRandomInt(0, 20) : getRandomInt(-40, -20),
+          ease: Power0.easeNone,
+        });
+    } else {
+      tl.set($thisBird, {
+        left: "-25px",
+        y: isEven ? getRandomInt(30, 60) : getRandomInt(-60, -30),
         ease: Power0.easeNone,
       })
-      .to($this, moveTime / 4, {
-        left: "75%",
-        y: isEven ? getRandomInt(-60, -30) : getRandomInt(30, 60),
-        ease: Power0.easeNone,
-      })
-      .to($this, moveTime / 4, {
-        left: "100%",
-        y: isEven ? getRandomInt(-20, 50) : getRandomInt(-50, 20),
-        ease: Power0.easeNone,
-      });
+        .to($thisBird, moveTime / 4, {
+          left: "25%",
+          y: isEven ? getRandomInt(-40, -20) : getRandomInt(20, 40),
+          ease: Power0.easeNone,
+        })
+        .to($thisBird, moveTime / 4, {
+          left: "50%",
+          y: isEven ? getRandomInt(20, 40) : getRandomInt(-40, -20),
+          ease: Power0.easeNone,
+        })
+        .to($thisBird, moveTime / 4, {
+          left: "75%",
+          y: isEven ? getRandomInt(-60, -30) : getRandomInt(30, 60),
+          ease: Power0.easeNone,
+        })
+        .to($thisBird, moveTime / 4, {
+          left: "100%",
+          y: isEven ? getRandomInt(-20, 50) : getRandomInt(-50, 20),
+          ease: Power0.easeNone,
+        });
+    }
   }
 }
 

@@ -284,12 +284,17 @@ body:not(i) {
   animation-timing-function: steps(10);
   animation-iteration-count: infinite;
   overflow: hidden; }
+  @media only screen and (max-width: 37em) {
+    .bird {
+      animation-duration: 1.2s; } }
   .bird:first-child {
     animation-delay: 0.3s; }
   .bird:nth-child(3) {
     animation-delay: 0.5s; }
   .bird:nth-child(5) {
-    animation-delay: 0.8s; }
+    animation-delay: 0.7s; }
+  .bird:nth-child(7) {
+    animation-delay: 0.9s; }
 
 .bird-wrapper {
   height: 29rem;
@@ -660,7 +665,7 @@ body:not(i) {
       font-weight: 400;
       margin-top: 3rem;
       font-size: 2rem;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.2rem;
       color: #777; }
       @media only screen and (max-width: 47.93em) {
         .section-cta .cta__content--subtitle {

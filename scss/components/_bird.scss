@@ -12,6 +12,10 @@
   animation-iteration-count: infinite;
   overflow: hidden;
 
+  @include respond(phone) {
+    animation-duration: 1.2s;
+  }
+
   &:first-child {
     animation-delay: 0.3s;
   }
@@ -19,7 +23,10 @@
     animation-delay: 0.5s;
   }
   &:nth-child(5) {
-    animation-delay: 0.8s;
+    animation-delay: 0.7s;
+  }
+  &:nth-child(7) {
+    animation-delay: 0.9s;
   }
 }
 
