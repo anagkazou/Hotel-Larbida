@@ -4,7 +4,7 @@
   height: 100vh;
 
   @include respond(tab-port) {
-    height: 70vh;
+    height: 80vh;
   }
   &__bg {
     position: absolute;
@@ -13,7 +13,7 @@
     width: 100%;
     height: inherit;
     @include respond(tab-port) {
-      height: 70vh;
+      height: 80vh;
     }
     & img {
       position: absolute;
@@ -31,7 +31,7 @@
       position: absolute;
 
       @include respond(tab-port) {
-        height: 70vh;
+        height: 80vh;
       }
     }
   }
@@ -193,7 +193,7 @@
       overflow: hidden;
 
       &__bg {
-        background-size: 130% auto;
+        background-size: 115% auto;
         background-position: bottom;
         left: 0;
         position: absolute;
@@ -212,10 +212,6 @@
         }
         @include respond(tab-port) {
           background-size: 180% auto;
-        }
-
-        @include respond(tab-land) {
-          //background-size: 135% auto;
         }
       }
       &__height {

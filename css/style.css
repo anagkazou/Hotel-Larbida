@@ -447,7 +447,7 @@ body:not(i) {
   height: 100vh; }
   @media only screen and (max-width: 47.93em) {
     .hero {
-      height: 70vh; } }
+      height: 80vh; } }
   .hero__bg {
     position: absolute;
     top: 0;
@@ -456,7 +456,7 @@ body:not(i) {
     height: inherit; }
     @media only screen and (max-width: 47.93em) {
       .hero__bg {
-        height: 70vh; } }
+        height: 80vh; } }
     .hero__bg img {
       position: absolute;
       height: 100%;
@@ -471,7 +471,7 @@ body:not(i) {
       position: absolute; }
       @media only screen and (max-width: 47.93em) {
         .hero__bg .overlay {
-          height: 70vh; } }
+          height: 80vh; } }
   .hero__content {
     position: absolute;
     z-index: 3;
@@ -583,7 +583,7 @@ body:not(i) {
     height: auto;
     overflow: hidden; }
     .section-cta .cta__bg {
-      background-size: 130% auto;
+      background-size: 115% auto;
       background-position: bottom;
       left: 0;
       position: absolute;
