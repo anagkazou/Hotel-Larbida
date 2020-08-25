@@ -97,6 +97,12 @@ body:not(i) {
   color: #000;
   font-weight: 600;
   font-size: 1.8rem; }
+  @media only screen and (max-width: 47.93em) {
+    .section-promotions__title {
+      font-size: 2.1rem; } }
+  @media only screen and (max-width: 37em) {
+    .section-promotions__title {
+      font-size: 2.4rem; } }
 
 .padding-trl {
   padding: 5.5rem 4rem 0 4rem; }
@@ -315,7 +321,7 @@ body:not(i) {
   display: inline-block;
   width: 2rem;
   min-height: 1.4rem;
-  margin: auto 1.5rem auto 0;
+  margin: auto 0 auto 1.5rem;
   position: relative;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -367,6 +373,11 @@ body:not(i) {
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg); }
+
+.menu__background {
+  height: 5rem;
+  width: 7rem;
+  position: absolute; }
 
 .footer {
   padding: 5rem 0;
