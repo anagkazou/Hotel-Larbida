@@ -45,7 +45,7 @@
     @include respond(phone) {
       //reconsider "Left"
       left: unset !important;
-      height: 25rem;
+      height: 35rem;
     }
 
     .menu__list {

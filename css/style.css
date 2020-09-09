@@ -412,7 +412,7 @@ body:not(i) {
   @media only screen and (max-width: 37em) {
     .menu__right {
       left: unset !important;
-      height: 25rem; } }
+      height: 35rem; } }
   @media only screen and (max-width: 37em) {
     .menu__right .menu__list {
       padding: 0; } }
