@@ -9,5 +9,13 @@
   padding: 3rem 0;
 }
 
-.row {
+.no-scroll {
+  overflow: hidden;
+  // position: fixed;
+  height: 100vh;
+}
+
+.backdrop-filter {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }

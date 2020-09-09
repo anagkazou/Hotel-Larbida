@@ -1,41 +1,48 @@
 .header {
-  display: flex;
-  width: 100vw;
-  height: 15vh;
   position: absolute;
   z-index: 8;
-  padding: 0 4%;
+
+  width: 100vw;
+  height: fit-content;
   color: $color-white;
-  @include respond(phone) {
-    height: 8vh;
-  }
-  &--logo {
-    width: 8rem;
-    height: auto;
-    align-self: center;
 
-    @include respond(phone) {
-      width: 6rem;
-    }
-  }
-
-  &__links {
-    display: inherit;
-    flex-direction: row;
-    margin-left: auto;
+  .nav {
+    display: flex;
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    height: 15vh;
+    padding: 0 4%;
     align-items: center;
 
-    &--text {
-      font-size: 1.3rem;
-    }
-  }
+    &--logo {
+      width: 7rem;
+      height: auto;
+      align-self: center;
 
-  .btn {
-    display: flex;
-    border: 1px solid $color-white;
-    justify-content: center;
-    padding: 0.7rem 1.2rem;
-    color: $color-black;
-    background-color: transparent;
+      @include respond(phone) {
+        width: 6rem;
+      }
+    }
+    &__links {
+      display: inherit;
+      flex-direction: row;
+      margin-left: auto;
+      align-items: center;
+      .btn {
+        display: flex;
+        border: 1px solid $color-white;
+        justify-content: center;
+        padding: 0.7rem 1.2rem;
+        background-color: transparent;
+      }
+      &--text {
+        font-size: 1.3rem;
+      }
+    }
+
+    @include respond(phone) {
+      height: 8vh;
+    }
   }
 }

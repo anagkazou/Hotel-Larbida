@@ -60,7 +60,7 @@ function initBirdAnimation() {
       repeat: -1,
     });
 
-    //Test viewport width
+    //Check viewport width
     if (isMobile) {
       tl.set($thisBird, {
         left: "-25px",

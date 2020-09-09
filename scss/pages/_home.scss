@@ -49,7 +49,7 @@
   }
 
   &--subheading {
-    font-size: 2.1rem;
+    font-size: 2.6rem;
     position: relative;
     padding-left: 8.6rem;
 
@@ -69,8 +69,9 @@
 
   & .btn {
     color: inherit;
-    font-size: 2.1rem;
+    font-size: 1.6rem;
     text-transform: none;
+    font-weight: 600;
   }
 
   & h1 {
@@ -89,35 +90,52 @@
       width: fit-content;
       height: fit-content;
       top: 53%;
-      right: 0%;
+      right: 4%;
+      z-index: 7 !important;
+
       @include respond(phone) {
         top: 50%;
       }
       &-bullet {
         background-color: $color-white;
-        width: 1rem;
-        height: 1rem;
+        width: 0.6rem;
+        height: 0.6rem;
         opacity: 1;
         border-radius: 0;
         position: unset;
         vertical-align: middle;
         transition: all 0.5s ease;
         @include respond(phone) {
-          width: 0.7rem;
-          height: 0.7rem;
+          width: 0.5rem;
+          height: 0.5rem;
         }
         &-active {
-          transform: scale(1.4);
-          padding: 0.8rem;
+          transform: scale(3);
+          //   padding: 0.8rem;
         }
 
-        &:nth-child(2) {
-          margin: 0 4rem;
+        &:not(:last-child) {
+          margin-right: 1.8rem;
           @include respond(phone) {
-            margin: 0 2.4rem;
+            margin-right: 1.4rem;
           }
         }
       }
+    }
+  }
+
+  .award {
+    width: 14rem;
+    height: 13rem;
+    position: absolute;
+    z-index: 5;
+    background-color: $color-black;
+    bottom: 15%;
+    right: 0;
+
+    @include respond(phone) {
+      width: 10rem;
+      height: 9rem;
     }
   }
 }
@@ -202,7 +220,6 @@
     .cta {
       height: auto;
       overflow: hidden;
-
       &__bg {
         background-size: 100% auto;
         background-position: bottom;
@@ -223,9 +240,6 @@
         }
         @include respond(tab-port) {
           background-size: 180% auto;
-        }
-        @include respond(tab-land) {
-          background-size: 110% auto;
         }
       }
       &__height {
@@ -287,7 +301,7 @@
           font-size: 3.2rem;
           font-weight: 500;
           line-height: 1.2em;
-          font-family: "Lora", sans-serif;
+          font-family: "Playfair Display", sans-serif;
           color: $color-brown-dark;
 
           @include respond(tab-port) {
@@ -416,7 +430,7 @@
           .rooms__add,
           .rooms__minus {
             color: $color-brown-light;
-            font-family: "lora", sans-serif;
+            font-family: "Playfair Display", sans-serif;
           }
 
           .date,

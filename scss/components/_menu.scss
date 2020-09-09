@@ -1,13 +1,156 @@
 .menu {
-  &__background {
-    height: 5rem;
-    width: 7rem;
-    position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  visibility: hidden;
+  font-family: "Playfair Display", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  z-index: 8;
+
+  @include respond(phone) {
+    overflow-y: scroll;
   }
 
-  &__nav {
+  &__left,
+  &__right {
+    //width: 0%;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    //padding: 10vh 4%;
+    position: fixed;
+    z-index: 12;
+    align-items: center;
+    justify-content: center;
+
+    overscroll-behavior: contain;
+
+    @include respond(phone) {
+      //implement with js instead
+      width: 100vw !important;
+      position: unset;
+      padding: 0 8%;
+      justify-content: unset;
+    }
+  }
+
+  &__left {
+    @include respond(phone) {
+      height: 60rem;
+      position: unset !important;
+    }
+  }
+
+  &__right {
+    @include respond(phone) {
+      //reconsider "Left"
+      left: unset !important;
+      height: 25rem;
+    }
+
+    .menu__list {
+      @include respond(phone) {
+        padding: 0;
+      }
+    }
   }
 
   &__list {
+    visibility: hidden;
+
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    z-index: 1000;
+    padding: 15% 0 8% 0;
+
+    &--right {
+      min-height: 20rem;
+    }
+  }
+
+  &__item {
+    position: fixed;
+  }
+
+  &__link,
+  &__link--right {
+    display: block;
+    color: $color-white !important;
+    transition: opacity 0.3s linear;
+    position: relative;
+
+    &::after {
+      content: "";
+      // margin-top: 2.2rem;
+      bottom: -10%;
+      left: 0;
+      width: 0%;
+      background-color: $color-white;
+      height: 2px;
+      position: absolute;
+      // transform: translateX(-50%);
+      transition: width 0.3s ease;
+    }
+
+    &:hover {
+      &:after {
+        width: 50%;
+      }
+    }
+  }
+
+  &__link {
+    font-size: 3.8rem;
+    //  text-align: center;
+    @include respond(phone) {
+      font-size: 3rem;
+    }
+    &--right {
+      font-size: 1.8rem !important;
+      font-family: "mulish", serif !important;
+      display: block;
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  &__social {
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 18;
+    padding: 2rem 0;
+    visibility: hidden;
+
+    img {
+      width: 2rem;
+      height: auto;
+
+      &:last-child {
+        margin-right: 3rem;
+      }
+    }
   }
 }
+
+.test-box {
+  height: 1rem;
+  width: 1rem;
+  background-color: $color-white;
+  position: absolute;
+  z-index: 33;
+}
+// .test {
+//   cursor: pointer;
+//   width: 3rem;
+//   height: 3rem;
+//   position: absolute;
+//   z-index: 22;
+//   top: 30%;
+//   left: 34%;
+//   background-color: aqua;
+// }
