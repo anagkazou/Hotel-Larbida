@@ -54,8 +54,15 @@ const menuTl = new TimelineMax({
       width: "50vw",
     }
   )
-  .to($bothSides, {
-    backdropFilter: "blur(8px)",
+  .call(() => {
+    $bothSides.addClass("backdrop-filter");
+    // $menuSocial.addClass("backdrop-filter");
+  })
+  .call(() => {
+    if (isMobile) {
+      $menuNav.addClass("backdrop-filter");
+      // $menuSocial.addClass("backdrop-filter");
+    }
   })
   .set($contentLeft, {
     visibility: "hidden",

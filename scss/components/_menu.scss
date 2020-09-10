@@ -31,6 +31,7 @@
       position: unset;
       padding: 0 8%;
       justify-content: unset;
+      // height: 0vh;
     }
   }
 
@@ -112,6 +113,9 @@
       display: block;
       &:not(:last-child) {
         margin-bottom: 3rem;
+        @include respond(phone) {
+          margin-bottom: 1rem;
+        }
       }
     }
   }
@@ -126,10 +130,16 @@
     padding: 2rem 0;
     visibility: hidden;
 
+    @include respond(phone) {
+      display: none;
+    }
     img {
       width: 2rem;
       height: auto;
 
+      @include respond(phone) {
+        width: 1.6rem;
+      }
       &:last-child {
         margin-right: 3rem;
       }
@@ -144,13 +154,3 @@
   position: absolute;
   z-index: 33;
 }
-// .test {
-//   cursor: pointer;
-//   width: 3rem;
-//   height: 3rem;
-//   position: absolute;
-//   z-index: 22;
-//   top: 30%;
-//   left: 34%;
-//   background-color: aqua;
-// }

@@ -115,8 +115,13 @@ body:not(i) {
   height: 100vh; }
 
 .backdrop-filter {
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px); }
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  /* Gets applied if supported only */ }
+
+@supports not ((-webkit-backdrop-filter: blur(8px)) or (backdrop-filter: blur(8px))) {
+  .backdrop-filter {
+    background-color: black !important; } }
 
 .accordion {
   height: 64rem;
@@ -184,6 +189,9 @@ body:not(i) {
       height: 33.33%; } }
   .accordion .foreground-section:hover .foreground-section__wrapper {
     background: rgba(0, 0, 0, 0.4); }
+    @media only screen and (max-width: 37em) {
+      .accordion .foreground-section:hover .foreground-section__wrapper {
+        background: unset; } }
 
 .accordion .foreground-section .foreground--image {
   position: absolute;
@@ -274,14 +282,19 @@ body:not(i) {
       position: absolute;
       width: 1.1rem;
       overflow: hidden;
-      transform: translateX(10px);
+      transform: translateX(1rem);
+      -webkit-transform: translate(1rem);
       transition: all ease 0.5s; }
       .btn--text span img {
         width: inherit;
         vertical-align: 0px !important;
         transition: all ease 0.5s; }
     .btn--text:hover span {
-      transform: translateX(25px); }
+      transform: translateX(1.2rem);
+      -webkit-transform: translate(1.2rem); }
+      @media only screen and (max-width: 37em) {
+        .btn--text:hover span {
+          transform: unset; } }
 
 .bird {
   position: absolute;
@@ -454,6 +467,9 @@ body:not(i) {
       display: block; }
       .menu__link--right:not(:last-child) {
         margin-bottom: 3rem; }
+        @media only screen and (max-width: 37em) {
+          .menu__link--right:not(:last-child) {
+            margin-bottom: 1rem; } }
   .menu__social {
     position: fixed;
     bottom: 0%;
@@ -463,9 +479,15 @@ body:not(i) {
     z-index: 18;
     padding: 2rem 0;
     visibility: hidden; }
+    @media only screen and (max-width: 37em) {
+      .menu__social {
+        display: none; } }
     .menu__social img {
       width: 2rem;
       height: auto; }
+      @media only screen and (max-width: 37em) {
+        .menu__social img {
+          width: 1.6rem; } }
       .menu__social img:last-child {
         margin-right: 3rem; }
 

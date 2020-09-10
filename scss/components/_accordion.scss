@@ -76,6 +76,9 @@
     .foreground-section__wrapper {
       background: rgba($color-black, 0.4);
       // border: 1px solid $color-white;
+      @include respond(phone) {
+        background: unset;
+      }
     }
   }
 }

@@ -26,7 +26,8 @@
       position: absolute;
       width: 1.1rem;
       overflow: hidden;
-      transform: translateX(10px);
+      transform: translateX(1rem);
+      -webkit-transform: translate(1rem);
       transition: all ease 0.5s;
 
       & img {
@@ -37,7 +38,11 @@
     }
 
     &:hover span {
-      transform: translateX(25px);
+      transform: translateX(1.2rem);
+      -webkit-transform: translate(1.2rem);
+      @include respond(phone) {
+        transform: unset;
+      }
     }
   }
 }
