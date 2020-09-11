@@ -18,6 +18,8 @@
 .backdrop-filter {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  //background-color: rgba(0, 0, 0, 0.2);
+
   /* Gets applied if supported only */
 }
 @supports not (

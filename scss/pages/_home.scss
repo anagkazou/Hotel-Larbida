@@ -236,7 +236,7 @@
         }
 
         @include respond(phone) {
-          background-size: 210% auto;
+          background-size: 220% auto;
         }
         @include respond(tab-port) {
           background-size: 180% auto;
