@@ -106,5 +106,5 @@ document.getElementById("menuNav").addEventListener("click", () => {
     $(".main").removeClass("no-scroll");
   }
 
-  isMobile ? $("#menu-social, #nav").toggleClass("backdrop-filter") : null;
+  // isMobile ? $("#menu-social, #nav").toggleClass("backdrop-filter") : null;
 });

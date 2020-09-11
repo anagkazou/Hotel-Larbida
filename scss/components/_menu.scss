@@ -29,7 +29,7 @@
       //implement with js instead
       width: 100vw !important;
       position: unset;
-      padding: 0 8%;
+      // padding: 0 8%;
       justify-content: unset;
       // height: 0vh;
     }
@@ -37,7 +37,7 @@
 
   &__left {
     @include respond(phone) {
-      height: 60rem;
+      height: 75vh;
       position: unset !important;
     }
   }
@@ -46,12 +46,13 @@
     @include respond(phone) {
       //reconsider "Left"
       left: unset !important;
-      height: 35rem;
+      height: 25vh;
     }
 
     .menu__list {
       @include respond(phone) {
         padding: 0;
+        width: 100%;
       }
     }
   }
@@ -65,9 +66,13 @@
     z-index: 1000;
     padding: 15% 0 8% 0;
 
-    &--right {
-      min-height: 20rem;
+    @include respond(phone) {
+      //height: 100%;
+      width: 100%;
     }
+    // &--right {
+    //   min-height: 20rem;
+    // }
   }
 
   &__item {
@@ -81,6 +86,18 @@
     transition: opacity 0.3s linear;
     position: relative;
 
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+
+      @include respond(phone) {
+        margin: unset;
+      }
+    }
+
+    @include respond(phone) {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
     &::after {
       content: "";
       // margin-top: 2.2rem;
@@ -97,6 +114,9 @@
     &:hover {
       &:after {
         width: 50%;
+        @include respond(phone) {
+          all: unset;
+        }
       }
     }
   }
@@ -130,9 +150,9 @@
     padding: 2rem 0;
     visibility: hidden;
 
-    @include respond(phone) {
-      display: none;
-    }
+    // @include respond(phone) {
+    //   display: none;
+    // }
     img {
       width: 2rem;
       height: auto;
@@ -141,7 +161,11 @@
         width: 1.6rem;
       }
       &:last-child {
-        margin-right: 3rem;
+        margin-left: 3rem;
+
+        @include respond(phone) {
+          margin-left: 1.2rem;
+        }
       }
     }
   }

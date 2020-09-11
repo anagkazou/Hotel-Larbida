@@ -416,19 +416,19 @@ body:not(i) {
       .menu__left, .menu__right {
         width: 100vw !important;
         position: unset;
-        padding: 0 8%;
         justify-content: unset; } }
   @media only screen and (max-width: 37em) {
     .menu__left {
-      height: 60rem;
+      height: 75vh;
       position: unset !important; } }
   @media only screen and (max-width: 37em) {
     .menu__right {
       left: unset !important;
-      height: 35rem; } }
+      height: 25vh; } }
   @media only screen and (max-width: 37em) {
     .menu__right .menu__list {
-      padding: 0; } }
+      padding: 0;
+      width: 100%; } }
   .menu__list {
     visibility: hidden;
     width: fit-content;
@@ -436,8 +436,9 @@ body:not(i) {
     position: fixed;
     z-index: 1000;
     padding: 15% 0 8% 0; }
-    .menu__list--right {
-      min-height: 20rem; }
+    @media only screen and (max-width: 37em) {
+      .menu__list {
+        width: 100%; } }
   .menu__item {
     position: fixed; }
   .menu__link, .menu__link--right {
@@ -445,6 +446,15 @@ body:not(i) {
     color: #fefefe !important;
     transition: opacity 0.3s linear;
     position: relative; }
+    .menu__link:not(:last-child), .menu__link--right:not(:last-child) {
+      margin-bottom: 1rem; }
+      @media only screen and (max-width: 37em) {
+        .menu__link:not(:last-child), .menu__link--right:not(:last-child) {
+          margin: unset; } }
+    @media only screen and (max-width: 37em) {
+      .menu__link, .menu__link--right {
+        text-align: center;
+        margin-bottom: 1rem; } }
     .menu__link::after, .menu__link--right::after {
       content: "";
       bottom: -10%;
@@ -456,6 +466,9 @@ body:not(i) {
       transition: width 0.3s ease; }
     .menu__link:hover:after, .menu__link--right:hover:after {
       width: 50%; }
+      @media only screen and (max-width: 37em) {
+        .menu__link:hover:after, .menu__link--right:hover:after {
+          all: unset; } }
   .menu__link {
     font-size: 3.8rem; }
     @media only screen and (max-width: 37em) {
@@ -479,9 +492,6 @@ body:not(i) {
     z-index: 18;
     padding: 2rem 0;
     visibility: hidden; }
-    @media only screen and (max-width: 37em) {
-      .menu__social {
-        display: none; } }
     .menu__social img {
       width: 2rem;
       height: auto; }
@@ -489,7 +499,10 @@ body:not(i) {
         .menu__social img {
           width: 1.6rem; } }
       .menu__social img:last-child {
-        margin-right: 3rem; }
+        margin-left: 3rem; }
+        @media only screen and (max-width: 37em) {
+          .menu__social img:last-child {
+            margin-left: 1.2rem; } }
 
 .test-box {
   height: 1rem;
