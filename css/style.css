@@ -31,6 +31,13 @@ body {
     body {
       font-size: 85% !important; } }
 
+.preloader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: teal;
+  z-index: 20; }
+
 body {
   box-sizing: border-box; }
 
