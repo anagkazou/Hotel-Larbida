@@ -15,17 +15,17 @@
   height: 100vh;
 }
 
+//background-color: rgba(0, 0, 0, 0.2);
 .backdrop-filter {
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  //background-color: rgba(0, 0, 0, 0.2);
-
-  /* Gets applied if supported only */
+  background-color: black;
 }
-@supports not (
-  (-webkit-backdrop-filter: blur(8px)) or (backdrop-filter: blur(8px))
+/* Gets applied if supported only */
+
+@supports (
+  (backdrop-filter: blur(8px)) or (-webkit-backdrop-filter: blur(8px))
 ) {
   .backdrop-filter {
-    background-color: black !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
   }
 }

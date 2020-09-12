@@ -16,7 +16,7 @@
   &__right {
     //width: 0%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     //padding: 10vh 4%;
     position: fixed;
     z-index: 12;
@@ -125,12 +125,15 @@
     font-size: 3.8rem;
     //  text-align: center;
     @include respond(phone) {
-      font-size: 3rem;
+      font-size: 4rem;
+      margin-bottom: 1.4rem;
     }
+
     &--right {
       font-size: 1.8rem !important;
       font-family: "mulish", serif !important;
       display: block;
+      text-transform: uppercase;
       &:not(:last-child) {
         margin-bottom: 3rem;
         @include respond(phone) {

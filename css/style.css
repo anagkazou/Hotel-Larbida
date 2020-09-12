@@ -115,13 +115,13 @@ body:not(i) {
   height: 100vh; }
 
 .backdrop-filter {
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  /* Gets applied if supported only */ }
+  background-color: black; }
 
-@supports not ((-webkit-backdrop-filter: blur(8px)) or (backdrop-filter: blur(8px))) {
+/* Gets applied if supported only */
+@supports (backdrop-filter: blur(8px)) or (-webkit-backdrop-filter: blur(8px)) {
   .backdrop-filter {
-    background-color: black !important; } }
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); } }
 
 .accordion {
   height: 64rem;
@@ -406,7 +406,7 @@ body:not(i) {
       overflow-y: scroll; } }
   .menu__left, .menu__right {
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
     z-index: 12;
     align-items: center;
@@ -473,11 +473,13 @@ body:not(i) {
     font-size: 3.8rem; }
     @media only screen and (max-width: 37em) {
       .menu__link {
-        font-size: 3rem; } }
+        font-size: 4rem;
+        margin-bottom: 1.4rem; } }
     .menu__link--right {
       font-size: 1.8rem !important;
       font-family: "mulish", serif !important;
-      display: block; }
+      display: block;
+      text-transform: uppercase; }
       .menu__link--right:not(:last-child) {
         margin-bottom: 3rem; }
         @media only screen and (max-width: 37em) {
