@@ -16,11 +16,18 @@
 }
 
 //background-color: rgba(0, 0, 0, 0.2);
-.backdrop-filter {
-  background-color: black;
-}
+// .backdrop-filter {
+//   background-color: black;
+// }
 /* Gets applied if supported only */
 
+@supports not (
+  (backdrop-filter: blur(8px)) or (-webkit-backdrop-filter: blur(8px))
+) {
+  .backdrop-filter {
+    background-color: black;
+  }
+}
 @supports (
   (backdrop-filter: blur(8px)) or (-webkit-backdrop-filter: blur(8px))
 ) {
