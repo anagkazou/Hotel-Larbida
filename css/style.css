@@ -138,6 +138,9 @@ body:not(i) {
   position: relative;
   margin-top: 5rem;
   margin-bottom: 2rem; }
+  @media only screen and (min-width: 48em) {
+    .accordion {
+      height: 66rem; } }
   @media only screen and (max-width: 47.93em) {
     .accordion {
       height: 90rem; } }
@@ -807,6 +810,9 @@ body:not(i) {
           background-size: 180% auto; } }
     .section-cta .cta__height {
       min-height: 35rem; }
+      @media only screen and (min-width: 48em) {
+        .section-cta .cta__height {
+          min-height: 45rem; } }
     .section-cta .cta__inner {
       -webkit-box-align: center;
       -webkit-align-items: center;

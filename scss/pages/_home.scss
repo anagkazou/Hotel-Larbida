@@ -229,6 +229,10 @@
       }
       &__height {
         min-height: 35rem;
+
+        @include respond(tab-land) {
+          min-height: 45rem;
+        }
       }
       &__inner {
         -webkit-box-align: center;

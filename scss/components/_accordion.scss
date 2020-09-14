@@ -3,6 +3,9 @@
   position: relative;
   margin-top: 5rem;
   margin-bottom: 2rem;
+  @include respond(tab-land) {
+    height: 66rem;
+  }
   @include respond(tab-port) {
     height: 90rem;
   }
