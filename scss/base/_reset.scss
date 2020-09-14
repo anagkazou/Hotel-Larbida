@@ -39,8 +39,16 @@ body {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: teal;
+  background-color: $color-white;
   z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 20rem;
+    height: auto;
+  }
 }
 //   @media (max-width: 575.98px) {
 

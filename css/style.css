@@ -35,8 +35,14 @@ body {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: teal;
-  z-index: 20; }
+  background-color: #fefefe;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .preloader img {
+    width: 20rem;
+    height: auto; }
 
 body {
   box-sizing: border-box; }
