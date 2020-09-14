@@ -123,21 +123,6 @@
       }
     }
   }
-
-  .award {
-    width: 14rem;
-    height: 13rem;
-    position: absolute;
-    z-index: 5;
-    background-color: $color-black;
-    bottom: 15%;
-    right: 0;
-
-    @include respond(phone) {
-      width: 10rem;
-      height: 9rem;
-    }
-  }
 }
 
 .section {

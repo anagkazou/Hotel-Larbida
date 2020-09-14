@@ -26,10 +26,6 @@ body {
     html,
     body {
       font-size: 50% !important; } }
-  @media only screen and (min-width: 87em) {
-    html,
-    body {
-      font-size: 85% !important; } }
 
 .preloader {
   position: fixed;
@@ -309,6 +305,26 @@ body:not(i) {
       @media only screen and (max-width: 37em) {
         .btn--text:hover span {
           transform: unset; } }
+
+.btn__gallery {
+  width: 14rem;
+  height: 12rem;
+  position: absolute;
+  z-index: 5;
+  color: #fefefe;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  bottom: 15%;
+  right: 0; }
+  @media only screen and (max-width: 37em) {
+    .btn__gallery {
+      width: 10rem;
+      height: 9rem; } }
 
 .bird {
   position: absolute;
@@ -713,18 +729,6 @@ body:not(i) {
         @media only screen and (max-width: 37em) {
           .hero .swiper-pagination-bullet:not(:last-child) {
             margin-right: 1.4rem; } }
-  .hero .award {
-    width: 14rem;
-    height: 13rem;
-    position: absolute;
-    z-index: 5;
-    background-color: #000;
-    bottom: 15%;
-    right: 0; }
-    @media only screen and (max-width: 37em) {
-      .hero .award {
-        width: 10rem;
-        height: 9rem; } }
 
 .section-about {
   padding: 8rem 4% 8rem 0; }
