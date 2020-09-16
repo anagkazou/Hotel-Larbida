@@ -615,12 +615,12 @@ body:not(i) {
     padding: 0 4%;
     align-items: center; }
     .header .nav--logo {
-      width: 7rem;
+      width: 8rem;
       height: auto;
       align-self: center; }
       @media only screen and (max-width: 37em) {
         .header .nav--logo {
-          width: 6rem; } }
+          width: 7rem; } }
     .header .nav__links {
       display: inherit;
       flex-direction: row;
