@@ -42,7 +42,9 @@
       font-size: 1.7rem;
       color: $color-grey-dark;
       margin-left: auto;
-
+      @include respond(tab-land) {
+        font-size: 1.4rem;
+      }
       @include respond(tab-port) {
         flex-direction: column;
         margin: 0 auto 1rem auto;

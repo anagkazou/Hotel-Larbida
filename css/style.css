@@ -576,6 +576,9 @@ body:not(i) {
       font-size: 1.7rem;
       color: #777;
       margin-left: auto; }
+      @media only screen and (min-width: 48em) {
+        .footer__navigation--right {
+          font-size: 1.4rem; } }
       @media only screen and (max-width: 47.93em) {
         .footer__navigation--right {
           flex-direction: column;
