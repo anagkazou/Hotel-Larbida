@@ -10,7 +10,7 @@ body:not(i) {
   letter-spacing: 1.2%;
 }
 .h1 {
-  font-size: 8.2rem;
+  font-size: 7.6rem;
   @include respond(phone) {
     font-size: 4.6rem;
   }

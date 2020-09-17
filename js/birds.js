@@ -1,25 +1,25 @@
-function removeElement(element) {
-  if (typeof element === "string") {
-    element = document.querySelector(element);
-  }
-  return function () {
-    element.parentNode.removeChild(element);
-  };
-}
-gsap.fromTo(
-  ".bird",
-  { top: "15%", left: "-3%" },
-  {
-    top: "50%",
-    left: "101%",
-    ease: Linear.easeNone,
-    duration: 10,
-    onComplete: function removeBird() {
-      $(".bird-container").remove();
-    },
-  }
-);
-// $('.bird-container').remove();
+// function removeElement(element) {
+//   if (typeof element === "string") {
+//     element = document.querySelector(element);
+//   }
+//   return function () {
+//     element.parentNode.removeChild(element);
+//   };
+// }
+// gsap.fromTo(
+//   ".bird",
+//   { top: "15%", left: "-3%" },
+//   {
+//     top: "50%",
+//     left: "101%",
+//     ease: Linear.easeNone,
+//     duration: 10,
+//     onComplete: function removeBird() {
+//       $(".bird-container").remove();
+//     },
+//   }
+// );
+// // $('.bird-container').remove();
 
 initBirdAnimation();
 

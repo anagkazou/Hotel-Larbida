@@ -3,7 +3,8 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  text-rendering: optimizeLegibility; }
 
 html,
 body {
@@ -65,7 +66,7 @@ body:not(i) {
   letter-spacing: 1.2%; }
 
 .h1 {
-  font-size: 8.2rem; }
+  font-size: 7.6rem; }
   @media only screen and (max-width: 37em) {
     .h1 {
       font-size: 4.6rem; } }
@@ -620,7 +621,7 @@ body:not(i) {
   height: 100vh; }
   @media only screen and (max-width: 47.93em) {
     .hero {
-      height: 80vh; } }
+      height: 90vh; } }
   .hero__bg {
     position: absolute;
     top: 0;
@@ -629,7 +630,7 @@ body:not(i) {
     height: inherit; }
     @media only screen and (max-width: 47.93em) {
       .hero__bg {
-        height: 80vh; } }
+        height: 90vh; } }
     .hero__bg img {
       position: absolute;
       height: 100%;
@@ -644,7 +645,7 @@ body:not(i) {
       position: absolute; }
       @media only screen and (max-width: 47.93em) {
         .hero__bg .overlay {
-          height: 80vh; } }
+          height: 90vh; } }
   .hero__content {
     position: absolute;
     z-index: 3;
@@ -654,9 +655,9 @@ body:not(i) {
     transform: translateY(-50%); }
     @media only screen and (max-width: 47.93em) {
       .hero__content {
-        top: 40%; } }
+        top: 46%; } }
   .hero--subheading {
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     position: relative;
     padding-left: 8.6rem; }
     @media only screen and (max-width: 37em) {
@@ -686,7 +687,7 @@ body:not(i) {
     width: fit-content;
     height: fit-content;
     top: 53%;
-    right: 3%;
+    right: 2.6%;
     z-index: 7 !important; }
     @media only screen and (max-width: 37em) {
       .hero .swiper-pagination {
@@ -712,7 +713,7 @@ body:not(i) {
           .hero .swiper-pagination-bullet:not(:last-child) {
             margin-right: 1.4rem; } }
   .hero .award {
-    width: 14rem;
+    width: 12rem;
     height: 15rem;
     position: absolute;
     z-index: 5;
@@ -720,7 +721,7 @@ body:not(i) {
     justify-content: center;
     align-items: center;
     background-color: #000;
-    bottom: 15%;
+    bottom: 8%;
     right: 0.5%; }
     .hero .award img {
       width: 90%;
