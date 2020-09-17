@@ -88,15 +88,11 @@
 
     &:not(:last-child) {
       margin-bottom: 1rem;
-
-      @include respond(phone) {
-        margin: 1.4rem;
-      }
     }
 
     @include respond(phone) {
       text-align: center;
-      margin-bottom: 1rem;
+      //margin-bottom: 1rem;
     }
     &::after {
       content: "";
