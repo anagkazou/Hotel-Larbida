@@ -40,8 +40,8 @@
     position: absolute;
     z-index: 3;
     color: $color-white;
-    top: 55%;
-    left: 5%;
+    top: 52%;
+    left: 6%;
     transform: translateY(-50%);
     @include respond(tab-port) {
       top: 40%;
@@ -90,7 +90,7 @@
       width: fit-content;
       height: fit-content;
       top: 53%;
-      right: 4%;
+      right: 3%;
       z-index: 7 !important;
 
       @include respond(phone) {
@@ -121,6 +121,29 @@
           }
         }
       }
+    }
+  }
+
+  .award {
+    width: 14rem;
+    height: 15rem;
+    position: absolute;
+    z-index: 5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-black;
+    bottom: 15%;
+    right: 0.5%;
+
+    img {
+      width: 90%;
+      height: auto;
+    }
+    @include respond(phone) {
+      width: 10rem;
+      height: 12rem;
     }
   }
 }
