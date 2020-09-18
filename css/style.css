@@ -598,7 +598,7 @@ body:not(i) {
         height: 8vh; } }
     @media only screen and (max-width: 47.93em) {
       .header .nav {
-        height: 12vh; } }
+        height: 7vh; } }
     .header .nav--logo {
       width: 8rem;
       height: auto;
