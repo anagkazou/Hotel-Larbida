@@ -435,14 +435,17 @@ body:not(i) {
     .menu__left {
       height: 75vh;
       position: unset !important; } }
-  @media only screen and (max-width: 37em) {
-    .menu__right {
-      left: unset !important;
-      height: 25vh; } }
-  @media only screen and (max-width: 37em) {
-    .menu__right .menu__list {
-      padding: 0;
-      width: 100%; } }
+  .menu__right {
+    display: flex; }
+    @media only screen and (max-width: 37em) {
+      .menu__right {
+        display: block;
+        left: unset !important;
+        height: 25vh; } }
+    @media only screen and (max-width: 37em) {
+      .menu__right .menu__list {
+        padding: 0;
+        width: 100%; } }
   .menu__list {
     visibility: hidden;
     width: fit-content;
@@ -483,7 +486,6 @@ body:not(i) {
     font-size: 3.8rem; }
     @media only screen and (max-width: 37em) {
       .menu__link {
-        font-size: 4rem;
         margin-bottom: 1.4rem; } }
     .menu__link--right {
       font-size: 1.8rem !important;
