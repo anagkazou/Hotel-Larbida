@@ -593,6 +593,12 @@ body:not(i) {
     height: 15vh;
     padding: 0 4%;
     align-items: center; }
+    @media only screen and (max-width: 37em) {
+      .header .nav {
+        height: 8vh; } }
+    @media only screen and (max-width: 47.93em) {
+      .header .nav {
+        height: 12vh; } }
     .header .nav--logo {
       width: 8rem;
       height: auto;
@@ -613,9 +619,6 @@ body:not(i) {
         background-color: transparent; }
       .header .nav__links--text {
         font-size: 1.3rem; }
-    @media only screen and (max-width: 37em) {
-      .header .nav {
-        height: 8vh; } }
 
 .hero {
   position: relative;

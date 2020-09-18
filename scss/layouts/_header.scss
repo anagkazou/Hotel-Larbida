@@ -15,6 +15,13 @@
     padding: 0 4%;
     align-items: center;
 
+    @include respond(phone) {
+      height: 8vh;
+    }
+
+    @include respond(tab-port) {
+      height: 12vh;
+    }
     &--logo {
       width: 8rem;
       height: auto;
@@ -40,10 +47,6 @@
       &--text {
         font-size: 1.3rem;
       }
-    }
-
-    @include respond(phone) {
-      height: 8vh;
     }
   }
 }
